@@ -15,8 +15,8 @@
 @media(max-width: 500px){
     .tests{
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 1rem;
-        width: 90%;
+        grid-gap: 0;
+        width: 95%;
     }
 
     .title{

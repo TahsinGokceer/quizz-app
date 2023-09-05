@@ -54,6 +54,7 @@
 
 @media(max-width: 500px){
     .box{
+        width: 90%;
         margin-bottom: 2rem;
         height: auto;
     }
