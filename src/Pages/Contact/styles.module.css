@@ -62,3 +62,31 @@ i#linkedin{
     color: steelblue;
 }
 
+@media(max-width: 500px){
+    .contact{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: auto;
+    }
+
+    .line{
+        display: none;
+    }
+
+    .social_links{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .context{
+        margin-top: 5rem;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .main{
+        width: 90%;
+        margin: 0 auto;
+    }
+}

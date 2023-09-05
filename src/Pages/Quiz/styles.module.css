@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 89.3vh;
+    height: 90.5vh;
     width: 100%;
     position: relative;
     margin-top: 0;
@@ -145,4 +145,20 @@
     text-decoration: none;
     padding: 10px 15px;
     background-color: lightblue;
+}
+
+@media(max-width: 500px){
+    .container .ready{
+        width: 70%;
+        height: 40%;
+    }    
+
+    .container .content{
+        width: 80%;
+        height: 60%;
+    }
+
+    .container .content h3{
+        font-size: 1.3rem;
+    }
 }

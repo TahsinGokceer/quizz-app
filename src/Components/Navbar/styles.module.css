@@ -68,3 +68,31 @@
 hr{
     margin: 0;
 }
+
+@media(max-width: 500px){
+    .right{
+        display: none;
+    }
+
+    .navbar{
+        padding: .5rem 0;
+        justify-content: center;
+    }
+
+    .navbar .left{
+        flex-direction: column;
+    }
+
+    .navbar .left .logo{
+        margin: 0 1rem;
+    }
+
+    .navbar .left .logo h1 a{
+        font-size: 2rem;
+    }
+
+    .navbar .left ul li{
+        margin: 0 0 0 1rem;
+    }
+
+}
