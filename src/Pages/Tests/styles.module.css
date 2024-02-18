@@ -1,0 +1,25 @@
+.title{
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 0;
+}
+
+.tests{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5rem;
+    width: 80%;
+    margin: 0 auto 4rem;
+}
+
+@media(max-width: 500px){
+    .tests{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0;
+        width: 95%;
+    }
+
+    .title{
+        font-size: 3.5rem;
+    }
+}

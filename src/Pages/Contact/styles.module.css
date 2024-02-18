@@ -1,0 +1,92 @@
+.contact{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 89.3vh;
+}
+
+.title{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.line{
+    height: 90%;
+    margin: auto 0;
+    width: 1px;
+    background-color: #000;
+}
+
+.social_links{
+    display: flex;
+    margin-top: 5rem;
+    justify-content: space-between;
+    align-items: center;
+    width: 140%;
+}
+
+.context{
+    width: 140%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.phone{
+    text-align: center;
+}
+
+.email{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+}
+
+i#instagram{
+    color: purple;
+}
+
+i#twitter{
+    color: lightskyblue;
+}
+
+i#github{
+    color: black;
+}
+
+i#linkedin{
+    color: steelblue;
+}
+
+@media(max-width: 500px){
+    .contact{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: auto;
+    }
+
+    .line{
+        display: none;
+    }
+
+    .social_links{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .context{
+        margin-top: 5rem;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .main{
+        width: 90%;
+        margin: 0 auto;
+    }
+}

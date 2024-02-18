@@ -1,0 +1,164 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90.5vh;
+    width: 100%;
+    position: relative;
+    margin-top: 0;
+}
+
+.container::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgb(103, 153, 194);
+    z-index: 1;
+
+}
+
+.container .ready{
+    position: relative;
+    z-index: 2;
+    background-color: #fff;
+    width: 20%;
+    height: 50%;
+    border-radius: 15px;
+}
+
+.container .ready h1{
+    text-align: center;
+    font-size: 2.3rem;
+    margin-bottom: 2rem;
+}
+
+.container .ready p{
+    width: 80%;
+    margin: 15px auto;
+}
+
+.container .ready button{
+    position: absolute;
+    bottom: 20px;
+    left: 30%;
+    padding: 15px 20px;
+    background-color: lightblue;
+    border: none;
+    border-radius: 20px;
+    font-size: 17px;
+    width: 40%;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+.container .ready button:hover{
+    background-color: rgb(132, 185, 203);
+    font-weight: bold;
+}
+
+.container .content{
+    position: relative;
+    width: 60%;
+    background-color: #fff;
+    height: 70%;
+    z-index: 2;
+}
+
+.container .content h3{
+    margin: 30px 40px 40px;
+    font-size: 1.5rem;
+}
+
+.container .content ul{
+    list-style-type: none;
+}
+
+.container .content li{
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.container .content li input{
+    margin-right: 10px;
+    width: 1rem;
+    height: 1rem;
+}
+
+.container .content button.next{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    padding: 20px 20px;
+    background-color: lightblue;
+    border: none;
+    border-left: 2px solid #000;
+    font-size: 20px;
+    width: 50%;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+.container .content button.prev{
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    padding: 20px 20px;
+    background-color: lightblue;
+    border: none;
+    border-right: 2px solid #000;
+    font-size: 20px;
+    width: 50%;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+.container .content button:hover{
+    background-color: rgb(132, 185, 203);
+    font-weight: bold;
+}
+
+.container .content h1{
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.container .content h4{
+    margin-left: 4rem;
+    font-size: 1.3rem;
+}
+
+.container .content a{
+    position: absolute;
+    bottom: 10px;
+    width: 40%;
+    left: 30%;
+    text-align: center;
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: lightblue;
+}
+
+@media(max-width: 500px){
+    .container .ready{
+        width: 70%;
+        height: 70%;
+    }    
+
+    .container .content{
+        width: 80%;
+        height: 70%;
+    }
+
+    .container .content h3{
+        font-size: 1.3rem;
+    }
+}

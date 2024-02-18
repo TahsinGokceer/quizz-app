@@ -1,0 +1,98 @@
+.container{
+    height: 87vh;
+}
+
+.main_logo{
+    text-align: center;
+    font-size: 4rem;
+    margin: 1rem 0 5rem 0;
+    height: 7vh;
+}
+
+.context{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height: 69vh;
+    margin-top: 2rem;
+    overflow: hidden;
+}
+
+.line{
+    height: 90%;
+    margin: auto 0;
+    width: 1px;
+    background-color: #000;
+}
+
+.left{
+    padding: 0 5rem;
+    line-height: 1.5;
+    font-size: 1.1rem;
+    height: 100%;
+    width: 100%;
+}
+
+.right{
+    position: relative;
+    padding: 0 5rem;
+    line-height: 1.5;
+    font-size: 1.1rem;
+    height: 100%;
+    width: 100%;
+}
+
+.logo{
+    margin: 0;
+}
+
+.btn{
+    position: absolute;
+    left: 35%;
+    bottom: 10%;
+    padding: 15px 10px;
+    background-color: lightblue;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    width: 30%;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+}
+
+.btn:hover{
+    background-color: rgb(132, 185, 203);
+    font-weight: bold;
+}
+
+@media(max-width: 500px){
+    .container{
+        height: auto;
+    }
+
+    .main_logo{
+        margin: 0;
+        font-size: 3rem;
+    }
+
+    .context{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        padding: 0 2rem;
+    }
+
+    .line{
+        display: none;
+    }
+
+    .right{
+        padding-bottom: 4rem;
+    }
+
+    .btn{
+        bottom: 1%;
+    }
+}
